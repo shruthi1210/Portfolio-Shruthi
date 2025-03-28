@@ -1,28 +1,20 @@
+final_index_path = "/mnt/data/final-index.html"
 
+full_colored_index_html = f"""
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Shruthi Nanditha Ganesh | Data Analyst</title>
-  <meta content="data analyst, machine learning, statistics, business analytics, data science, Rutgers, Shruthi, Python, R, SQL, Tableau, Power BI" name="description">
-  <meta content="data analyst, machine learning, data visualization, dashboarding, NLP, student success, Shruthi Ganesh" name="keywords">
-  <meta name="theme-color" content="#0073aa">
-  <meta property="og:title" content="Shruthi Nanditha Ganesh | Data Analyst Portfolio">
-  <meta property="og:description" content="MS in Statistics & Data Science | Rutgers University | Skilled in Python, R, SQL, Tableau, Power BI">
-  <meta property="og:image" content="assets/img/profile.png">
-  <meta property="og:url" content="https://shruthiganesh.netlify.app/">
-  <meta property="og:type" content="website">
-  <link href="assets/img/fav.png" rel="icon">
+  <meta name="description" content="Shruthi's data analyst portfolio featuring machine learning, data science, and visualizations.">
+  <meta name="keywords" content="Shruthi, Data Analyst, Portfolio, Machine Learning, Python, SQL, Tableau">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+
   <header id="header">
     <div class="d-flex flex-column">
       <div class="profile">
@@ -45,77 +37,43 @@
   </header>
 
   <main id="main">
-    <section id="about" class="about section-bg">
+
+    <section id="about" class="about section-bg" style="background: #fff;">
       <div class="container">
         <div class="section-title">
-          <h2>About</h2>
-          <p>MS in Statistics & Data Science at Rutgers University with experience in machine learning, dashboard development, and statistical modeling. Passionate about transforming raw data into actionable insights.</p>
+          <h2 style="color:#0d47a1;">About Me</h2>
+          <p style="color:#333;">MS in Statistics & Data Science at Rutgers University. I build solutions using Python, R, SQL, and visual storytelling with Tableau and Power BI. My work lies at the intersection of data analytics, machine learning, and academic success analytics.</p>
         </div>
       </div>
     </section>
 
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Projects</h2>
-        </div>
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/breast-cancer-1.png" class="img-fluid" alt="Breast Cancer Detection">
-              <div class="portfolio-info">
-                <h4>Breast Cancer Detection</h4>
-                <div class="portfolio-links">
-                  <a href="portfolio-details-breast-cancer.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/fraud-1.png" class="img-fluid" alt="Credit Card Fraud Detection">
-              <div class="portfolio-info">
-                <h4>Credit Card Fraud Detection</h4>
-                <div class="portfolio-links">
-                  <a href="portfolio-details-fraud.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/rideshare-1.png" class="img-fluid" alt="Rideshare Price Analysis">
-              <div class="portfolio-info">
-                <h4>Rideshare Price Analysis</h4>
-                <div class="portfolio-links">
-                  <a href="portfolio-details-rideshare.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
+    {portfolio_colored_html}
 
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-title">
-          <h2>Contact</h2>
+          <h2 style="color:#0d47a1;">Contact</h2>
         </div>
-        <p>Email: shruthiganesh1210@gmail.com</p>
+        <p>Email: <a href="mailto:shruthiganesh1210@gmail.com">shruthiganesh1210@gmail.com</a></p>
         <p>Phone: +1 732-522-8529</p>
       </div>
     </section>
+
   </main>
 
-  <footer id="footer">
+  <footer id="footer" style="background:#0d47a1; color:#fff;">
     <div class="container text-center">
       <p>&copy; 2024 Shruthi Nanditha Ganesh. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
+"""
+
+# Save the updated full index.html
+with open(final_index_path, "w") as f:
+    f.write(full_colored_index_html)
+
+final_index_path
+
