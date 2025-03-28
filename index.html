@@ -1,73 +1,136 @@
-enhanced_index_section = """
-<!-- ======= About Section ======= -->
-<section id="about" class="about section-bg" style="background:#ffffff;">
-  <div class="container">
-    <div class="section-title">
-      <h2>About Me</h2>
-      <p>I’m Shruthi Nanditha Ganesh, a passionate Data Analyst with expertise in transforming data into insights using Python, SQL, R, and modern visualization tools. I love creating models that solve real-world problems.</p>
-      <div style="text-align: center; margin-top: 20px;">
-        <a href="#portfolio" class="btn btn-primary" style="background:#00796b; border:none; padding:10px 20px; color:#fff; border-radius:5px; margin:5px;">View Projects</a>
-        <a href="https://github.com/shruthi1210" target="_blank" class="btn btn-outline-secondary" style="padding:10px 20px; margin:5px;">Visit My GitHub</a>
-        <a href="mailto:shruthiganesh1210@gmail.com" class="btn btn-success" style="padding:10px 20px; margin:5px;">Contact Me</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shruthi Nanditha Ganesh | Data Analyst Portfolio</title>
+
+  <!-- Link to your main stylesheet -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column profile">
+      <img src="assets/img/profile.png" alt="Shruthi's Profile Image" class="img-fluid rounded-circle" />
+      <h1 class="text-light"><a href="index.html">Shruthi Nanditha Ganesh</a></h1>
+      <div class="social-links mt-3 text-center">
+        <a href="https://github.com/shruthi1210" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://linkedin.com/in/shruthi-n-ganesh-4b6a3814b" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio section-bg" style="background:#f1f8e9;">
-  <div class="container">
-    <div class="section-title">
-      <h2>Projects</h2>
-      <p>These are a few of my recent data projects, powered by real datasets and meaningful insights.</p>
-    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#portfolio"><i class="bx bx-briefcase"></i> <span>Projects</span></a></li>
+        <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="row portfolio-container">
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="assets/img/portfolio/breast-cancer-1.png" class="img-fluid" alt="Breast Cancer Detection">
-          <div class="portfolio-info">
-            <h4>Breast Cancer Detection</h4>
-            <div class="portfolio-links">
-              <a href="portfolio-details-breast-cancer.html" title="Details"><i class="bx bx-info-circle"></i></a>
-              <a href="https://github.com/shruthi1210/Breast-Cancer-Detection" target="_blank" class="btn btn-sm btn-dark">GitHub Repo</a>
-            </div>
+  <main id="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-container">
+        <h1>Shruthi Nanditha Ganesh</h1>
+        <p><span>Data Analyst | Python | SQL | Tableau | Machine Learning</span></p>
+      </div>
+    </section>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>
+            I’m a passionate Data Analyst with expertise in transforming data into insights using Python, SQL, R, and visualization tools like Tableau. I specialize in building data models that drive decisions and solve real-world problems.
+          </p>
+          <div style="text-align: center; margin-top: 20px;">
+            <a href="#portfolio" class="btn btn-primary">View Projects</a>
+            <a href="https://github.com/shruthi1210" target="_blank" class="btn btn-outline-secondary">GitHub</a>
+            <a href="mailto:shruthiganesh1210@gmail.com" class="btn btn-success">Email Me</a>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="assets/img/portfolio/fraud-1.png" class="img-fluid" alt="Credit Card Fraud Detection">
-          <div class="portfolio-info">
-            <h4>Credit Card Fraud Detection</h4>
-            <div class="portfolio-links">
-              <a href="portfolio-details-fraud.html" title="Details"><i class="bx bx-info-circle"></i></a>
-              <a href="https://github.com/shruthi1210/Credit-Card-Fraud" target="_blank" class="btn btn-sm btn-dark">GitHub Repo</a>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Explore my latest work in analytics and machine learning.</p>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/breast-cancer-1.png" class="img-fluid" alt="Breast Cancer Detection">
+              <div class="portfolio-info">
+                <h4>Breast Cancer Detection</h4>
+                <div class="portfolio-links">
+                  <a href="portfolio-details-breast-cancer.html"><i class="bx bx-info-circle"></i></a>
+                  <a href="https://github.com/shruthi1210/Breast-Cancer-Detection" target="_blank" class="btn btn-sm btn-dark">GitHub Repo</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="assets/img/portfolio/rideshare-1.png" class="img-fluid" alt="Rideshare Price Analysis">
-          <div class="portfolio-info">
-            <h4>Rideshare Price Analysis</h4>
-            <div class="portfolio-links">
-              <a href="portfolio-details-rideshare.html" title="Details"><i class="bx bx-info-circle"></i></a>
-              <a href="https://github.com/shruthi1210/Rideshare-Price-Analysis" target="_blank" class="btn btn-sm btn-dark">GitHub Repo</a>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/fraud-1.png" class="img-fluid" alt="Credit Card Fraud">
+              <div class="portfolio-info">
+                <h4>Credit Card Fraud Detection</h4>
+                <div class="portfolio-links">
+                  <a href="portfolio-details-fraud.html"><i class="bx bx-info-circle"></i></a>
+                  <a href="https://github.com/shruthi1210/Credit-Card-Fraud" target="_blank" class="btn btn-sm btn-dark">GitHub Repo</a>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/rideshare-1.png" class="img-fluid" alt="Rideshare Analysis">
+              <div class="portfolio-info">
+                <h4>Rideshare Price Analysis</h4>
+                <div class="portfolio-links">
+                  <a href="portfolio-details-rideshare.html"><i class="bx bx-info-circle"></i></a>
+                  <a href="https://github.com/shruthi1210/Rideshare-Price-Analysis" target="_blank" class="btn btn-sm btn-dark">GitHub Repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Let’s connect! I’m open to collaboration, projects, or just geeking out over data.</p>
+          <p>Email: <a href="mailto:shruthiganesh1210@gmail.com">shruthiganesh1210@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/shruthi1210" target="_blank">shruthi1210</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="copyright">
+      &copy; 2024 Shruthi Nanditha Ganesh. All rights reserved.
     </div>
-  </div>
-</section>
-"""
+  </footer>
 
-# Write to file
-with open(enhanced_index_section_path, "w") as f:
-    f.write(enhanced_index_section)
-
-enhanced_index_section_path
+</body>
+</html>
