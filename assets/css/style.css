@@ -1,0 +1,51 @@
+
+/* Custom Portfolio Styling */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #0d2e57;
+}
+
+a {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-menu a {
+  font-weight: 500;
+  color: #fff;
+}
+
+.portfolio-wrap {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.portfolio-wrap:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.section-title h2 {
+  font-size: 28px;
+  color: #0d2e57;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}

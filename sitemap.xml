@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yourdomain.netlify.app/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.netlify.app/portfolio-page.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.netlify.app/portfolio-details-breast-cancer.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.netlify.app/portfolio-details-fraud.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.netlify.app/portfolio-details-rideshare.html</loc>
+    <priority>0.64</priority>
+  </url>
+</urlset>
