@@ -1,79 +1,75 @@
-final_index_path = "/mnt/data/final-index.html"
+enhanced_index_section_path = "/mnt/data/enhanced-index-section.html"
 
-full_colored_index_html = f"""
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Shruthi Nanditha Ganesh | Data Analyst</title>
-  <meta name="description" content="Shruthi's data analyst portfolio featuring machine learning, data science, and visualizations.">
-  <meta name="keywords" content="Shruthi, Data Analyst, Portfolio, Machine Learning, Python, SQL, Tableau">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
-<body>
-
-  <header id="header">
-    <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/profile.png" alt="Shruthi Profile Image" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Shruthi Nanditha Ganesh</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://github.com/shruthi1210" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/shruthi-n-ganesh-4b6a3814b" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
+enhanced_index_section = """
+<!-- ======= About Section ======= -->
+<section id="about" class="about section-bg" style="background:#ffffff;">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>I’m Shruthi Nanditha Ganesh, a passionate Data Analyst with expertise in transforming data into insights using Python, SQL, R, and modern visualization tools. I love creating models that solve real-world problems.</p>
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="#portfolio" class="btn btn-primary" style="background:#00796b; border:none; padding:10px 20px; color:#fff; border-radius:5px; margin:5px;">View Projects</a>
+        <a href="https://github.com/shruthi1210" target="_blank" class="btn btn-outline-secondary" style="padding:10px 20px; margin:5px;">Visit My GitHub</a>
+        <a href="mailto:shruthiganesh1210@gmail.com" class="btn btn-success" style="padding:10px 20px; margin:5px;">Contact Me</a>
       </div>
-      <nav class="nav-menu">
-        <ul>
-          <li class="active"><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#portfolio"><i class="bx bx-book-content"></i> Projects</a></li>
-          <li><a href="portfolio-page.html"><i class="bx bx-folder"></i> <span>All Projects</span></a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main id="main">
-
-    <section id="about" class="about section-bg" style="background: #fff;">
-      <div class="container">
-        <div class="section-title">
-          <h2 style="color:#0d47a1;">About Me</h2>
-          <p style="color:#333;">MS in Statistics & Data Science at Rutgers University. I build solutions using Python, R, SQL, and visual storytelling with Tableau and Power BI. My work lies at the intersection of data analytics, machine learning, and academic success analytics.</p>
-        </div>
-      </div>
-    </section>
-
-    {portfolio_colored_html}
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-title">
-          <h2 style="color:#0d47a1;">Contact</h2>
-        </div>
-        <p>Email: <a href="mailto:shruthiganesh1210@gmail.com">shruthiganesh1210@gmail.com</a></p>
-        <p>Phone: +1 732-522-8529</p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer id="footer" style="background:#0d47a1; color:#fff;">
-    <div class="container text-center">
-      <p>&copy; 2024 Shruthi Nanditha Ganesh. All rights reserved.</p>
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg" style="background:#f1f8e9;">
+  <div class="container">
+    <div class="section-title">
+      <h2>Projects</h2>
+      <p>These are a few of my recent data projects, powered by real datasets and meaningful insights.</p>
     </div>
-  </footer>
 
-</body>
-</html>
+    <div class="row portfolio-container">
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/breast-cancer-1.png" class="img-fluid" alt="Breast Cancer Detection">
+          <div class="portfolio-info">
+            <h4>Breast Cancer Detection</h4>
+            <div class="portfolio-links">
+              <a href="portfolio-details-breast-cancer.html" title="Details"><i class="bx bx-info-circle"></i></a>
+              <a href="https://github.com/shruthi1210/Breast-Cancer-Detection" target="_blank" class="btn btn-sm btn-dark">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/fraud-1.png" class="img-fluid" alt="Credit Card Fraud Detection">
+          <div class="portfolio-info">
+            <h4>Credit Card Fraud Detection</h4>
+            <div class="portfolio-links">
+              <a href="portfolio-details-fraud.html" title="Details"><i class="bx bx-info-circle"></i></a>
+              <a href="https://github.com/shruthi1210/Credit-Card-Fraud" target="_blank" class="btn btn-sm btn-dark">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/rideshare-1.png" class="img-fluid" alt="Rideshare Price Analysis">
+          <div class="portfolio-info">
+            <h4>Rideshare Price Analysis</h4>
+            <div class="portfolio-links">
+              <a href="portfolio-details-rideshare.html" title="Details"><i class="bx bx-info-circle"></i></a>
+              <a href="https://github.com/shruthi1210/Rideshare-Price-Analysis" target="_blank" class="btn btn-sm btn-dark">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 """
 
-# Save the updated full index.html
-with open(final_index_path, "w") as f:
-    f.write(full_colored_index_html)
+# Write to file
+with open(enhanced_index_section_path, "w") as f:
+    f.write(enhanced_index_section)
 
-final_index_path
-
+enhanced_index_section_path
